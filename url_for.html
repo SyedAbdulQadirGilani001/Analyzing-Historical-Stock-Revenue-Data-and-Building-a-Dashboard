@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Process Product Description</title>
+    </head>
+    <body>
+        <h1>Process Product Description</h1>
+        <form method="POST" action="{{ url_for('process_product_description') }}">
+            <label for="product_name">Product Name:</label>
+            <input type="text" name="product_name" id="product_name" required>
+            <br>
+            <label for="product_description">Product Description:</label>
+            <textarea name="product_description" id="product_description" required></textarea>
+            <br>
+            <input type="submit" value="Process Description">
+        </form>
+    </body>
+</html>
